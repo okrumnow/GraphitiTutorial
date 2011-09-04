@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.graphiti.ui.diagramTypes">
+      <diagramType
+            description="Diagram type for tutorial"
+            id="de.jebc.tutorial.graphiti.diagramType1"
+            name="My Graphiti Tutorial Diagram Type"
+            type="mytutorial">
+      </diagramType>
+   </extension>
+   <extension
+         point="org.eclipse.graphiti.ui.diagramTypeProviders">
+      <diagramTypeProvider
+            class="de.jebc.tutorial.graphiti.diagram.MyTutorialDiagramTypeProvider"
+            id="de.jebc.tutorial.graphiti.diagramTypeProvider1"
+            name="de.jebc.tutorial.graphiti.diagramTypeProvider1">
+         <diagramType
+               id="de.jebc.tutorial.graphiti.diagramType1">
+         </diagramType>
+      </diagramTypeProvider>
+   </extension>
+
+</plugin>
